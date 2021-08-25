@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  font-family: "Karla", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: hsl(204, 43%, 93%);
+}
+.wrapper {
+  width: 640px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: 320px 320px;
+  grid-template-rows: 220px 260px;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 51px -34px #4abebd;
+  -moz-box-shadow: 0px 0px 51px -34px #4abebd;
+  box-shadow: 0px 0px 51px -34px #4abebd;
+  border-radius: 7px;
+  overflow: hidden;
+}
+.head {
+  grid-column: span 2;
+  padding: 40px;
+}
+.header {
+  color: hsl(179, 62%, 43%);
+  height: 55px;
+  font-size: 24px;
+  font-weight: 700;
+}
+.money-back {
+  color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  font-size: 18px;
+  height: 35px;
+}
+.benfits {
+  color: hsl(218, 22%, 67%);
+  line-height: 25px;
+}
+.body-left {
+  background-color: #2bb3b1;
+  padding: 40px;
+}
+.body-right {
+  background-color: #4abebd;
+  padding: 40px;
+}
+.small-heading {
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  height: 40px;
+}
+.price {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+  display: flex;
+  margin-bottom: 10px;
+}
+.small-price {
+  padding-left: 10px;
+  display: flex;
+  align-items: center;
+  color: hsl(204deg 43% 93% / 59%);
+  font-size: 18px;
+  font-weight: 400;
+}
+.access {
+  color: hsl(204, 43%, 93%);
+}
+.sign-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+  margin-top: 30px;
+  height: 45px;
+  background-color: hsl(71, 73%, 54%);
+  -webkit-box-shadow: 0px 10px 38px -16px rgb(0 0 0 / 75%);
+  -moz-box-shadow: 0px 10px 38px -16px rgb(0 0 0 / 75%);
+  box-shadow: 0px 10px 38px -16px rgb(0 0 0 / 75%);
+}
+.desc {
+  font-size: 14px;
+  line-height: 20px;
+  color: hsl(204deg 43% 93% / 74%);
+}
+
+@media (max-width: 375px) {
+  .card-grid {
+    grid-template-columns: auto;
+    grid-template-rows: 260px 230px 230px;
+  }
+  .wrapper {
+    width: 85%;
+  }
+  .head {
+    grid-column: span 1;
+    padding: 30px 20px;
+  }
+  .body-left,
+  .body-right {
+    padding: 25px 20px;
+  }
+  .header {
+    font-size: 20px;
+    height: 50px;
+  }
+  .money-back {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .benfits {
+    font-size: 14px;
+  }
+  .small-heading {
+    font-size: 18px;
+  }
+}
